@@ -1,2 +1,3 @@
-# GuldIO
-Guld.io website
+# guld.info
+
+Guld deep information website.
