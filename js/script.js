@@ -4,7 +4,7 @@ jQuery(function ($) {
     // jQuery One Page Scrolling & Link Handling
     // --------------------------------------------------------------------
 		// Select all links with hashes
-		$('a[href*=#]:not([href=#])').on('click', function(){
+		$('a[href*=\\#]:not([href=\\#])').on('click', function(){
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
 		        || location.hostname == this.hostname) {
 		        var target = $(this.hash);
@@ -22,7 +22,7 @@ jQuery(function ($) {
 		$('a').filter(function () {return this.hostname != window.location.hostname;}).attr('target', '_blank');
 		
 		// No event for empty links
-		$('a[href=#]').on('click', function(){return false;});
+		$('a[href=\\#]').on('click', function(){return false;});
 			
     // --------------------------------------------------------------------
     // Closes the Responsive Menu on Menu Item Click
