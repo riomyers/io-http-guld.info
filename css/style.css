@@ -89,7 +89,6 @@ span.typed-cursor {
 	min-height: 100%;
     width: 100%;
     z-index: 9;
-    margin-top: -4rem;
     background: url("../img/bg.png") no-repeat center center fixed;
     background-color: #000;
 }
@@ -137,13 +136,14 @@ span.typed-cursor {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
+
 .header #welcome {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);	
+	position: relative;
+	top: 20%;
+	margin: 0 20%;
     text-align: center;
 }
+
 
 .header #welcome .btn {
     color: #ffffff;
@@ -872,6 +872,7 @@ section {
 }
 
 @media screen and (max-width: 48em) {
+	.header #welcome {margin: 0;}	
 	.limitWidth{max-width: 80%;}
 	#social a {
     	font-size: 1rem;
